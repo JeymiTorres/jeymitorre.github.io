@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+.imagen-circular {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.imagen-circular img {
+    width: 100%;
+    height: auto;
+}
+
+.textoizquierdo {
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.contenido ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.contenido li {
+    margin: 0 10px;
+}
+
+.mundo {
+    padding: 50px;
+    text-align: center;
+}
+
+.mundo h1 {
+    color: #222;
+}
+
+.cafe {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contacto {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.contacto i {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #222;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card {
+    position: relative;
+    width: calc(33.33% - 20px);
+    height: 420px;
+    background-color: #8f7552;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 4px;
+}
+
+.card:hover {
+    height: 480px;
+}
+
+.imagenes2 img {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    margin: auto;
+    z-index: 1;
+    box-shadow: 0 5px 20px #111;
+    border-radius: 4px;
+}
+
+.parrafo1 {
+    position: relative;
+    margin-top: -10px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover .parrafo1 {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 10px;
+    transition-delay: 0.3s;
+}
+
+.Experiencia ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.Experiencia li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.Experiencia li:before {
+    content: '\f0d7';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #222;
+}
+.pag {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.pag footer {
+    margin-top: 10px;
+    font-style: italic;
+    color: #777;
+}
